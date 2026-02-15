@@ -1,0 +1,187 @@
+
+body {
+    background-color: #f7f5ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ส่วนหัว Header --- */
+header {
+    background: linear-gradient(135deg, #2f126d 0%, #a54fa8 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* --- ส่วนเนื้อหา Section --- */
+section {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 30px rgba(110, 48, 242, 0.05);
+}
+
+h2 {
+    color: #2f126d;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-left: 6px solid #8e26ad;
+    padding-left: 15px;
+}
+
+/* ทักษะ Skills */
+.skills span {
+    display: inline-block;
+    background: #f0ebff;
+    color: #6e30f2;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* --- ระบบโปรเจกต์ (Grid) --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(110, 48, 242, 0.12);
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-detail {
+    padding: 20px;
+}
+
+.tags span {
+    font-size: 0.75rem;
+    background: #e1d5ff;
+    color: #512da8;
+    padding: 4px 12px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+/* --- ติดต่อ & QR Code --- */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-info a {
+    color: #6e30f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.qr-container {
+    text-align: center;
+    background: #fcfaff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px dashed #d1c4e9;
+}
+
+.qr-code {
+    width: 140px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.line-btn {
+    display: block;
+    background: #06C755;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- ระบบ Modal (Pop-up) --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #6e30f2;
+}
+
+#modalImg {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    color: #9c27b0;
+    font-weight: 300;
+}

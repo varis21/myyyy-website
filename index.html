@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisa Profile | Computer Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <img src="IMG_ME2.png" alt="Warisa Profile" class="profile-pic">
+            <h1>วริศรา คงปั้น</h1>
+            <p>Computer Engineering Student | Future Web Developer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>
+                นักศึกษาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยรังสิต 
+                มีความสนใจด้าน <strong>Web Development</strong> และ <strong>UX/UI Design</strong> 
+                ตั้งใจพัฒนาทักษะด้านการพัฒนาเว็บไซต์ และพร้อมเรียนรู้จากประสบการณ์จริง
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>ทักษะ (Skills)</h2>
+            <div class="skills">
+                <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                <span>Figma</span> <span>Responsive Design</span> <span>Git / GitHub</span>
+            </div>
+        </section>
+
+       <section id="projects">
+    <h2>ผลงานของฉัน (Projects)</h2>
+    <div class="project-grid">
+
+        <!-- Project 1 -->
+<a href="project1-detail.html" class="project-card">
+
+    <div class="project-img">
+        <img src="image.png" alt="Leonardo Website">
+    </div>
+
+    <div class="project-detail">
+        <h3>Leonardo da Vinci Website</h3>
+        <p>คลิกเพื่อดูรายละเอียด →</p>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+    </div>
+
+</a>
+
+
+    </div>
+</section>
+
+        <section id="contact">
+            <h2>ติดต่อ</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>📧 <strong>Email:</strong> <a href="mailto:Warisa21khongpan@gmail.com">Warisa21khongpan@gmail.com</a></p>
+                    <p>📞 <strong>Phone:</strong> <a href="tel:0622378021">0622378021</a></p>
+                    <p>📍 <strong>Location:</strong> <a href="https://maps.google.com/?q=Pathum+Thani" target="_blank">Pathum Thani, Thailand</a></p>
+                </div>
+
+                <div class="qr-container">
+                    <a href="https://line.me/ti/p/~id_janetha" target="_blank">
+                        <img src="QR.jpg" alt="Line QR Code" class="qr-code">
+                    </a>
+                    <p>Scan to Add Line</p>
+                    <a href="https://line.me/ti/p/~id_janetha" target="_blank" class="line-btn">
+                        Add Line: id_janetha
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Warisa Khongpun | Thank you for visiting my portfolio. I look forward to the opportunity to contribute and grow with your team.❤️
+        </footer>
+    </div>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProject()">&times;</span>
+            <img id="modalImg" src="" alt="Project Image">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <script>
+        function openProject(title, desc, img) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('modalImg').src = img;
+            document.getElementById('projectModal').style.display = "block";
+        }
+        function closeProject() {
+            document.getElementById('projectModal').style.display = "none";
+        }
+        window.onclick = function(event) {
+            let modal = document.getElementById('projectModal');
+            if (event.target == modal) { modal.style.display = "none"; }
+        }
+    </script>
+</body>
+</html>
